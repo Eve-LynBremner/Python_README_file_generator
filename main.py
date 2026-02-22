@@ -25,11 +25,11 @@ content = Content(user_data)
 markdown_content = content.generate_content()
 
 # Generate readme file using the formatted markdown content
-readme_file = Generator('test.md', markdown_content)
+readme_file = Generator('readme.md', markdown_content)
 readme_file.generate_readme()
 
 # Confirmation that readme.md has been created
-test = open("test.md").read()
+test = open("readme.md").read()
 if test:
     console.print("[bold green]readme.md has been generated[/bold green] ✅")    
 else:
