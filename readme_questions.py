@@ -3,25 +3,29 @@ questions = [
         "type": "input", 
         "name": "title", 
         "message": "What is your project title?",
-        "validate": lambda result: len(result.strip()) > 0 or "This cannot be left empty."
+        "validate": lambda result: len(result.strip()) > 0,
+        "invalid_message": "This cannot be left empty."
      },
     {
         "type": "input", 
         "name": "description", 
         "message": "Describe your project.",
-        "validate": lambda result: len(result.strip()) > 0 or "This cannot be left empty."
+        "validate": lambda result: len(result.strip()) > 0,
+        "invalid_message": "This cannot be left empty."
      },
     {
         "type": "input", 
         "name": "installation", 
         "message": "Provide installation instructions.",
-        "validate": lambda result: len(result.strip()) > 0 or "This cannot be left empty."
+        "validate": lambda result: len(result.strip()) > 0,
+        "invalid_message": "This cannot be left empty."
      },
     {
         "type": "input", 
         "name": "usage", 
         "message": "Provide usage information.",
-        "validate": lambda result: len(result.strip()) > 0 or "This cannot be left empty."
+        "validate": lambda result: len(result.strip()) > 0,
+        "invalid_message": "This cannot be left empty."
      },
     {
         "type": "list", 
@@ -33,12 +37,14 @@ questions = [
         "type": "input", 
         "name": "author", 
         "message": "What is the author's name?",
-        "validate": lambda result: len(result.strip()) > 0 or "This cannot be left empty."
+        "validate": lambda result: len(result.strip()) > 0,
+        "invalid_message": "This cannot be left empty."
         },
     {
         "type": "input", 
         "name": "contact", 
         "message": "Provide contact information",
-        "validate": lambda result: len(result.strip()) > 0 or "This cannot be left empty."
+        "validate": lambda result: len(result.strip()) > 0,
+        "invalid_message": "This cannot be left empty."
         },
 ]
