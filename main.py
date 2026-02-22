@@ -14,7 +14,7 @@ console = Console()
 
 # Instructions for user
 console.print(
-    "Hi. To use this read me generator, please answer the questions below. A readme markdown file will then be created in your current folder. Thank you."
+    "To use this read me generator, please follow the prompts below. A readme.md file will then be created in your current folder."
 )
 
 # Get input by asking questions
@@ -27,3 +27,10 @@ markdown_content = content.generate_content()
 # Generate readme file using the formatted markdown content
 readme_file = Generator('test.md', markdown_content)
 readme_file.generate_readme()
+
+# Confirmation that readme.md has been created
+test = open("test.md").read()
+if test:
+    console.print("[bold green]readme.md has been generated[/bold green] ✅")    
+else:
+    console.print("[bold red]readme.md failed to generate[/bold red] ❌")
