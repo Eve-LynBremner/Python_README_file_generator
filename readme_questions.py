@@ -31,7 +31,7 @@ questions = [
         "type": "list", 
         "name": "license", 
         "message": "Select a license from the list:", 
-        "choices" : ["MIT License", "Apache License 2.0", "GPLv3", "BSD 3-Clause", "No License"]
+        "choices" : ["MIT License", "Apache License 2.0", "GNU General Public License (GPL v3)", "GNU Lesser General Public License (LGPL v3)", "Mozilla Public License 2.0 (MPL 2.0)", "Creative Commons Licenses (CC0, CC BY, etc.)", "Unlicense"]
         },
     {
         "type": "input", 
